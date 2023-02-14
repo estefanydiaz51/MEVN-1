@@ -35,6 +35,9 @@ app.use(express.urlencoded({ extended: true}))
 // })
 
 app.use('/api', require('./routes/nota'))
+app.use('/api', require('./routes/user'))
+app.use('/api/login', require('./routes/login'))
+
 
 //Middleware para vue.js router mdo history
 const history = require('connect-history-api-fallback');
